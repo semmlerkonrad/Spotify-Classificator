@@ -3,7 +3,7 @@ import requests
 import base64
 import urllib
 
-# Client Keys
+#Wywaliłem hardcoded klucze, bo technicznie nie powinny być widoczne publicznie xd. Najłatwiej to samemu zamienić u siebie w edytorze
 CLIENT_ID = input()
 CLIENT_SECRET = input()
 
