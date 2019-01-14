@@ -32,9 +32,9 @@ def getAuthToken():
     return authHeader
 
 
-def getAudioAnalysis(trackId, authToken):
+def getAudioAnalysis(trackID, authToken):
     #adres GET do wykonania tego zapytania, wystarczy podmienić ten adres na jakikolwiek inny podany w Docs i powinno działać
-    chosenTrackEndpoint = "{0}/audio-analysis/{1}".format(apiURL, trackId)
+    chosenTrackEndpoint = "{0}/audio-analysis/{1}".format(apiURL, trackID)
     getRequest  = requests.get(chosenTrackEndpoint, headers = authToken)
 
     # dane z low-level analizy Audio zwrócone przez serwer
@@ -46,3 +46,11 @@ def getAudioAnalysis(trackId, authToken):
     return analysisData
 
 
+def getTrackIDsFromPlaylist(playlistID, authToken):
+    chosenPlaylistEndpoint = "{0}/playlists/{1}/tracks".format(apiURL, playlistID)
+    getRequest = requests.get(chosenPlaylistEndpoint, headers=authToken)
+
+    tracksData = json.loads(getRequest.text)
+    with open('tracks.json', 'w') as outfile:
+        json.dump(tracksData, outfile)
+    return tracksData

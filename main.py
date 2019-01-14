@@ -14,8 +14,9 @@ def callback():
     #analiza audio DANGER ZONE
     DANGERZONE = getData.getAudioAnalysis('34x6hEJgGAOQvmlMql5Ige', authToken)
 
+    myPlaylistTracks = getData.getTrackIDsFromPlaylist('5N13fntbZVqW2euiBTfbD2', authToken)
     #zwracamy plik json to przeglądarki
-    return json.dumps(DANGERZONE)
+    return json.dumps(myPlaylistTracks)
 
 
 if __name__ == "__main__":
