@@ -1,6 +1,7 @@
 import json
 import requests
 import base64
+import pandas as pd
 
 #Wywaliłem hardcoded klucze, bo technicznie nie powinny być widoczne publicznie xd. Najłatwiej to samemu zamienić u siebie w edytorze
 CLIENT_ID = input()
@@ -40,17 +41,41 @@ def getAudioAnalysis(trackID, authToken):
     # dane z low-level analizy Audio zwrócone przez serwer
     analysisData = json.loads(getRequest.text)
 
+
     #zapisujemy do pliku json na wszelki wypadek i potem zwracamy do funkcji, żeby przetworzyć
-    with open('DANGERZONE.json', 'w') as outfile:
-        json.dump(analysisData, outfile)
+    #with open('DANGERZONE.json', 'w') as outfile:
+    #    json.dump(analysisData, outfile)
     return analysisData
 
 
-def getTrackIDsFromPlaylist(playlistID, authToken):
+def getTrackAndAlbumIDsFromPlaylist(playlistID, authToken):
+    #declare columns and content of the DataFrame
+    cols=['trackID','albumID', 'track Genre']
+    listOfID=[]
+
     chosenPlaylistEndpoint = "{0}/playlists/{1}/tracks".format(apiURL, playlistID)
     getRequest = requests.get(chosenPlaylistEndpoint, headers=authToken)
 
-    tracksData = json.loads(getRequest.text)
-    with open('tracks.json', 'w') as outfile:
-        json.dump(tracksData, outfile)
-    return tracksData
+    playlistItems = json.loads(getRequest.text)
+    for item in playlistItems['items']:
+        trackID = item['track']['id']
+        albumID = item['track']['album']['id']
+        albumGenre = getAlbumGenres(albumID,authToken)
+        listOfID.append([trackID,albumID, albumGenre])
+    dataAll = pd.DataFrame(listOfID, columns=cols)
+    # dataAll.to_csv('newcs.csv')
+
+    return dataAll
+
+def getAlbumGenres(albumID, authToken):
+    chosenAlbumEndpoint = "{0}/albums/{1}".format(apiURL,albumID)
+    getRequest = requests.get(chosenAlbumEndpoint, headers=authToken)
+
+    albumItems = json.loads(getRequest.text)
+    firstGenre = albumItems['genres'][0]
+    return firstGenre
+
+
+
+
+#TODO wykrywanie kodów odpowiedzi Serwera i reagowanie na błędy
