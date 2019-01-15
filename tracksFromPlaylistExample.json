@@ -1,0 +1,689 @@
+{
+  "href": "https://api.spotify.com/v1/playlists/5N13fntbZVqW2euiBTfbD2/tracks?offset=0&limit=100",
+  "items": [
+    {
+      "added_at": "2018-12-03T11:13:22Z",
+      "added_by": {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/z0mbiecl0wn"
+        },
+        "href": "https://api.spotify.com/v1/users/z0mbiecl0wn",
+        "id": "z0mbiecl0wn",
+        "type": "user",
+        "uri": "spotify:user:z0mbiecl0wn"
+      },
+      "is_local": false,
+      "primary_color": null,
+      "track": {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0stmdx2IonUUUIlWQ9bLYZ"
+              },
+              "href": "https://api.spotify.com/v1/artists/0stmdx2IonUUUIlWQ9bLYZ",
+              "id": "0stmdx2IonUUUIlWQ9bLYZ",
+              "name": "yutaka hirasaka",
+              "type": "artist",
+              "uri": "spotify:artist:0stmdx2IonUUUIlWQ9bLYZ"
+            }
+          ],
+          "available_markets": [
+            "AD",
+            "AE",
+            "AR",
+            "AT",
+            "AU",
+            "BE",
+            "BG",
+            "BH",
+            "BO",
+            "BR",
+            "CA",
+            "CH",
+            "CL",
+            "CO",
+            "CR",
+            "CY",
+            "CZ",
+            "DE",
+            "DK",
+            "DO",
+            "DZ",
+            "EC",
+            "EE",
+            "EG",
+            "ES",
+            "FI",
+            "FR",
+            "GB",
+            "GR",
+            "GT",
+            "HK",
+            "HN",
+            "HU",
+            "ID",
+            "IE",
+            "IL",
+            "IS",
+            "IT",
+            "JO",
+            "KW",
+            "LB",
+            "LI",
+            "LT",
+            "LU",
+            "LV",
+            "MA",
+            "MC",
+            "MT",
+            "MX",
+            "MY",
+            "NI",
+            "NL",
+            "NO",
+            "NZ",
+            "OM",
+            "PA",
+            "PE",
+            "PH",
+            "PL",
+            "PS",
+            "PT",
+            "PY",
+            "QA",
+            "RO",
+            "SA",
+            "SE",
+            "SG",
+            "SK",
+            "SV",
+            "TH",
+            "TN",
+            "TR",
+            "TW",
+            "US",
+            "UY",
+            "VN",
+            "ZA"
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/3gobeqbi2tgEkElXQ77c9k"
+          },
+          "href": "https://api.spotify.com/v1/albums/3gobeqbi2tgEkElXQ77c9k",
+          "id": "3gobeqbi2tgEkElXQ77c9k",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/1662e8bb3e1e58c958b51d2542aa00d1dd959c0c",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/16552c0919ff57e3847f614ebc45f9781294554f",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/6c0a0b6023d8d0afc70f3dd79ba11930dd8ed8d3",
+              "width": 64
+            }
+          ],
+          "name": "heavenly tone",
+          "release_date": "2018-11-04",
+          "release_date_precision": "day",
+          "total_tracks": 13,
+          "type": "album",
+          "uri": "spotify:album:3gobeqbi2tgEkElXQ77c9k"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0stmdx2IonUUUIlWQ9bLYZ"
+            },
+            "href": "https://api.spotify.com/v1/artists/0stmdx2IonUUUIlWQ9bLYZ",
+            "id": "0stmdx2IonUUUIlWQ9bLYZ",
+            "name": "yutaka hirasaka",
+            "type": "artist",
+            "uri": "spotify:artist:0stmdx2IonUUUIlWQ9bLYZ"
+          }
+        ],
+        "available_markets": [
+          "AD",
+          "AE",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BH",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "DZ",
+          "EC",
+          "EE",
+          "EG",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JO",
+          "KW",
+          "LB",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MA",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "OM",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PS",
+          "PT",
+          "PY",
+          "QA",
+          "RO",
+          "SA",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TH",
+          "TN",
+          "TR",
+          "TW",
+          "US",
+          "UY",
+          "VN",
+          "ZA"
+        ],
+        "disc_number": 1,
+        "duration_ms": 296000,
+        "episode": false,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "TCJPI1807448"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3noxajjedyBfsd5eXjBwxC"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3noxajjedyBfsd5eXjBwxC",
+        //TEGO SZUKAMY ⬇
+        "id": "3noxajjedyBfsd5eXjBwxC",
+        "is_local": false,
+        "name": "a beautiful day",
+        "popularity": 32,
+        "preview_url": "https://p.scdn.co/mp3-preview/7f094af501d3ab48aaae9e0a10cafd3422bef991?cid=064745a28ab54fac909a96e10d08b56e",
+        "track": true,
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:3noxajjedyBfsd5eXjBwxC"
+      },
+      "video_thumbnail": {
+        "url": null
+      }
+    },
+    //pozostałe kawałki, ale budowę mają taką samą co wyżej
+    {
+      "added_at": "2018-12-03T11:36:46Z",
+      "added_by": {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/z0mbiecl0wn"
+        },
+        "href": "https://api.spotify.com/v1/users/z0mbiecl0wn",
+        "id": "z0mbiecl0wn",
+        "type": "user",
+        "uri": "spotify:user:z0mbiecl0wn"
+      },
+      "is_local": false,
+      "primary_color": null,
+      "track": {
+        "album": {
+          "album_type": "single",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4gHcu2JoaXJ0mV4aNPCd7N"
+              },
+              "href": "https://api.spotify.com/v1/artists/4gHcu2JoaXJ0mV4aNPCd7N",
+              "id": "4gHcu2JoaXJ0mV4aNPCd7N",
+              "name": "Benny Sings",
+              "type": "artist",
+              "uri": "spotify:artist:4gHcu2JoaXJ0mV4aNPCd7N"
+            }
+          ],
+          "available_markets": [
+            "AD",
+            "AT",
+            "BG",
+            "CH",
+            "CY",
+            "CZ",
+            "DE",
+            "DK",
+            "EE",
+            "ES",
+            "FI",
+            "FR",
+            "GB",
+            "GR",
+            "HU",
+            "IE",
+            "IS",
+            "IT",
+            "LI",
+            "LT",
+            "LV",
+            "MC",
+            "MT",
+            "NO",
+            "PL",
+            "PT",
+            "RO",
+            "SE",
+            "SK",
+            "TR"
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2i2XYBB0tcB8ZWSlLOWsRM"
+          },
+          "href": "https://api.spotify.com/v1/albums/2i2XYBB0tcB8ZWSlLOWsRM",
+          "id": "2i2XYBB0tcB8ZWSlLOWsRM",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/3edc2dae3309fd26bb37d35bfee0445cceabad34",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/705ec560351f607b558e587bbff0800f31482c1b",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/736c9012f12fcb2ed0e105c0bc4794a274180ba3",
+              "width": 64
+            }
+          ],
+          "name": "Passionfruit",
+          "release_date": "2018-11-07",
+          "release_date_precision": "day",
+          "total_tracks": 1,
+          "type": "album",
+          "uri": "spotify:album:2i2XYBB0tcB8ZWSlLOWsRM"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4gHcu2JoaXJ0mV4aNPCd7N"
+            },
+            "href": "https://api.spotify.com/v1/artists/4gHcu2JoaXJ0mV4aNPCd7N",
+            "id": "4gHcu2JoaXJ0mV4aNPCd7N",
+            "name": "Benny Sings",
+            "type": "artist",
+            "uri": "spotify:artist:4gHcu2JoaXJ0mV4aNPCd7N"
+          }
+        ],
+        "available_markets": [
+          "AD",
+          "AT",
+          "BG",
+          "CH",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "EE",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "HU",
+          "IE",
+          "IS",
+          "IT",
+          "LI",
+          "LT",
+          "LV",
+          "MC",
+          "MT",
+          "NO",
+          "PL",
+          "PT",
+          "RO",
+          "SE",
+          "SK",
+          "TR"
+        ],
+        "disc_number": 1,
+        "duration_ms": 193635,
+        "episode": false,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "NLX5C1800036"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3zorZsIeScJArHcuJ4PBYP"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3zorZsIeScJArHcuJ4PBYP",
+        "id": "3zorZsIeScJArHcuJ4PBYP",
+        "is_local": false,
+        "name": "Passionfruit",
+        "popularity": 16,
+        "preview_url": "https://p.scdn.co/mp3-preview/90d379a836de6dd2ef532478890b5cf427a5d3a3?cid=064745a28ab54fac909a96e10d08b56e",
+        "track": true,
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:3zorZsIeScJArHcuJ4PBYP"
+      },
+      "video_thumbnail": {
+        "url": null
+      }
+    },
+    {
+      "added_at": "2019-01-14T00:19:43Z",
+      "added_by": {
+        "external_urls": {
+          "spotify": "https://open.spotify.com/user/z0mbiecl0wn"
+        },
+        "href": "https://api.spotify.com/v1/users/z0mbiecl0wn",
+        "id": "z0mbiecl0wn",
+        "type": "user",
+        "uri": "spotify:user:z0mbiecl0wn"
+      },
+      "is_local": false,
+      "primary_color": null,
+      "track": {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/23E2hrdvZnKUYpNZRIxhjx"
+              },
+              "href": "https://api.spotify.com/v1/artists/23E2hrdvZnKUYpNZRIxhjx",
+              "id": "23E2hrdvZnKUYpNZRIxhjx",
+              "name": "Cassiano",
+              "type": "artist",
+              "uri": "spotify:artist:23E2hrdvZnKUYpNZRIxhjx"
+            }
+          ],
+          "available_markets": [
+            "AD",
+            "AE",
+            "AR",
+            "AT",
+            "AU",
+            "BE",
+            "BG",
+            "BH",
+            "BO",
+            "BR",
+            "CA",
+            "CH",
+            "CL",
+            "CO",
+            "CR",
+            "CY",
+            "CZ",
+            "DE",
+            "DK",
+            "DO",
+            "DZ",
+            "EC",
+            "EE",
+            "EG",
+            "ES",
+            "FI",
+            "FR",
+            "GB",
+            "GR",
+            "GT",
+            "HK",
+            "HN",
+            "HU",
+            "ID",
+            "IE",
+            "IL",
+            "IS",
+            "IT",
+            "JO",
+            "JP",
+            "KW",
+            "LB",
+            "LI",
+            "LT",
+            "LU",
+            "LV",
+            "MA",
+            "MC",
+            "MT",
+            "MX",
+            "MY",
+            "NI",
+            "NL",
+            "NO",
+            "NZ",
+            "OM",
+            "PA",
+            "PE",
+            "PH",
+            "PL",
+            "PS",
+            "PT",
+            "PY",
+            "QA",
+            "RO",
+            "SA",
+            "SE",
+            "SG",
+            "SK",
+            "SV",
+            "TH",
+            "TN",
+            "TR",
+            "TW",
+            "UY",
+            "VN",
+            "ZA"
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2DTcOvJhcTPDoI0LU7zE18"
+          },
+          "href": "https://api.spotify.com/v1/albums/2DTcOvJhcTPDoI0LU7zE18",
+          "id": "2DTcOvJhcTPDoI0LU7zE18",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/5a3a4fd74456b310eb8db8424790358baf44fe5e",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/a7a6cae589eab8189cc7a39643472226cb941717",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/d1aa3fafafbc78fc9ba3ebe4637839d0ff0e4cff",
+              "width": 64
+            }
+          ],
+          "name": "Cuban Soul: 18 Kilates",
+          "release_date": "1976-01-01",
+          "release_date_precision": "day",
+          "total_tracks": 9,
+          "type": "album",
+          "uri": "spotify:album:2DTcOvJhcTPDoI0LU7zE18"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/23E2hrdvZnKUYpNZRIxhjx"
+            },
+            "href": "https://api.spotify.com/v1/artists/23E2hrdvZnKUYpNZRIxhjx",
+            "id": "23E2hrdvZnKUYpNZRIxhjx",
+            "name": "Cassiano",
+            "type": "artist",
+            "uri": "spotify:artist:23E2hrdvZnKUYpNZRIxhjx"
+          }
+        ],
+        "available_markets": [
+          "AD",
+          "AE",
+          "AR",
+          "AT",
+          "AU",
+          "BE",
+          "BG",
+          "BH",
+          "BO",
+          "BR",
+          "CA",
+          "CH",
+          "CL",
+          "CO",
+          "CR",
+          "CY",
+          "CZ",
+          "DE",
+          "DK",
+          "DO",
+          "DZ",
+          "EC",
+          "EE",
+          "EG",
+          "ES",
+          "FI",
+          "FR",
+          "GB",
+          "GR",
+          "GT",
+          "HK",
+          "HN",
+          "HU",
+          "ID",
+          "IE",
+          "IL",
+          "IS",
+          "IT",
+          "JO",
+          "JP",
+          "KW",
+          "LB",
+          "LI",
+          "LT",
+          "LU",
+          "LV",
+          "MA",
+          "MC",
+          "MT",
+          "MX",
+          "MY",
+          "NI",
+          "NL",
+          "NO",
+          "NZ",
+          "OM",
+          "PA",
+          "PE",
+          "PH",
+          "PL",
+          "PS",
+          "PT",
+          "PY",
+          "QA",
+          "RO",
+          "SA",
+          "SE",
+          "SG",
+          "SK",
+          "SV",
+          "TH",
+          "TN",
+          "TR",
+          "TW",
+          "UY",
+          "VN",
+          "ZA"
+        ],
+        "disc_number": 1,
+        "duration_ms": 464626,
+        "episode": false,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "BRPGD7600005"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2ufnnZAVCoEoShQjdRgwS1"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2ufnnZAVCoEoShQjdRgwS1",
+        "id": "2ufnnZAVCoEoShQjdRgwS1",
+        "is_local": false,
+        "name": "Onda",
+        "popularity": 39,
+        "preview_url": null,
+        "track": true,
+        "track_number": 4,
+        "type": "track",
+        "uri": "spotify:track:2ufnnZAVCoEoShQjdRgwS1"
+      },
+      "video_thumbnail": {
+        "url": null
+      }
+    }
+  ],
+  "limit": 100,
+  "next": null,
+  "offset": 0,
+  "previous": null,
+  "total": 3
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
