@@ -1,5 +1,6 @@
 # Spotify-Classificator
 by Konrad Semmler
+
 A project involving digging the audio data of the songs avalaible in the Spotify library and trying to classify their genre based on said data. 
 
 The project directory consists of:
