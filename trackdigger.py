@@ -23,7 +23,7 @@ class TrackDigger:
         headers = {"Authorization": "Basic {}".format(base64_encoded.decode('ascii'))}
         POST_request = requests.post(self.spotify_token, data=body_POST, headers=headers)
 
-        # If the answer was not OK, sends the request again after some period of time
+        # If the answer was not 200, sends the request again after some period of time
         while not POST_request.ok:
             try:
                 self.check_error_code(POST_request)
@@ -105,7 +105,6 @@ class TrackDigger:
                 track_audio_features = self.get_audio_features(track_id)
                 track_audio_data = self.get_audio_analysis(track_id)
 
-                duration = track_audio_data['track']['duration']
                 end_of_fade_in = track_audio_data['track']['end_of_fade_in']
                 start_of_fade_out = track_audio_data['track']['start_of_fade_out']
                 loudness = track_audio_data['track']['loudness']
@@ -113,26 +112,7 @@ class TrackDigger:
                 timeSignature = track_audio_data['track']['time_signature']
                 mode = track_audio_data['track']['mode']
                 key = track_audio_features['key']
-                acousticness = track_audio_features['acousticness']
-                danceability = track_audio_features['danceability']
-                energy = track_audio_features['energy']
-                instrumentalness = track_audio_features['instrumentalness']
-                liveness = track_audio_features['liveness']
-                speechiness = track_audio_features['speechiness']
-                valence = track_audio_features['valence']
                 number_of_sections = len(track_audio_data['sections'])
-
-                number_of_beats = len(track_audio_data['beats'])
-                number_of_tatums = len(track_audio_data['tatums'])
-
-                if number_of_beats == 0 or number_of_beats is None:
-                    tatums_per_beats = 0
-                else:
-                    tatums_per_beats = number_of_tatums / number_of_beats
-                tatums_length = []
-                for tatum in track_audio_data['tatums']:
-                    tatums_length.append(tatum["duration"])
-                tatum_deviation = np.around(np.nanstd(tatums_length), decimals=3)
 
                 segments_attack = []
                 for segment in track_audio_data["segments"]:
@@ -147,12 +127,9 @@ class TrackDigger:
                     segments_attack.append(attack)
 
                 attack_average = np.around(np.nanmean(segments_attack), decimals=3)
-                attack_deviation = np.around(np.nanstd(segments_attack), decimals=3)
 
-                track_data.append([genre, duration, end_of_fade_in, start_of_fade_out, loudness, tempo,
-                                   timeSignature, mode, key, acousticness, danceability, energy, instrumentalness,
-                                   liveness, speechiness, valence, number_of_sections, tatums_per_beats,
-                                   tatum_deviation, attack_average, attack_deviation])
+                track_data.append([genre, end_of_fade_in, start_of_fade_out, loudness, tempo,
+                                   timeSignature, mode, key, number_of_sections, attack_average])
             except NotFoundException:
                 print('Skipping track {}, as it does not have analysis data.'.format(track_id))
 
